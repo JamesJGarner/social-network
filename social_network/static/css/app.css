@@ -1,0 +1,43 @@
+body {
+	    background: #e9eaed;
+}
+
+.header {
+	background: #333;
+	float: left;
+	width: 100%;
+	height: 50px;
+}
+
+.header ul {
+	margin:0;
+	float: right;
+	width: 100%;
+}
+
+.header h3 {
+	color:#FFF;
+}
+
+.header ul li {
+	list-style: none;
+	height: 50px;
+	float: right
+}
+
+.header ul li a {
+    float: left;
+    background: #333;
+    height: 50px;
+    padding: 12px 30px;
+    color: #FFF;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    font-size: 9pt;
+    padding: 16px 20px;
+}
+
+.header img {
+	float: left;
+    height: 100%;
+}

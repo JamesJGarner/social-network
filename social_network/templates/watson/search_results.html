@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<style type="text/css">
+hr { border-color:rgba(0, 0, 0, 0.1)}
+
+</style>
+    <div class="row">
+        <div class="large-12 columns">
+    <h1>Results</h1>
+    {% for result in search_results %}
+ <hr>
+            <article>
+                <h5>
+                    {% if result.object.user %}<a href="/user/{{result.object.user}}/">{% endif %}
+                    {{result.title}} - @{{result.object.user }}
+                    {% if result.object.user %}</a>{% endif %}
+                                {% if result.object.bio %}
+                   - {{result.object.bio}}
+                {% endif %}
+                </h5>
+
+            </article>
+
+    {% endfor %}
+
+{% endblock %}
